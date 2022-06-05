@@ -1,0 +1,8 @@
+body {
+    min-width: 372px;
+}
+
+/* Envelopamento*/
+.wrapper {
+    min-height: 100vh;
+}
