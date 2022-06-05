@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="/LojaWanted/node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/LojaWanted/css/estilos.css">
 
-    <title>Loja Wanted :: Página Principal</title>
+    <title>Loja Wanted :: Contato</title>
 </head>
 
 <body>
@@ -50,7 +50,7 @@
                             <form class="d-flex input-group" role="search">
                                 <input class="form-control" type="search" placeholder="Pesquisar..."
                                     aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">🔍</button>
+                                <button class="btn btn-outline-success active" type="submit">🔍</button>
                             </form>
                         </li>
                     </ul>
@@ -75,7 +75,40 @@
 
         <main class="flex-fill">
             <div class="container">
-                
+                <div class="row justify-content-center">
+                    <form class="col-sm-10 col-md-8 col-lg-6" action="">
+                        <h1>Entre em Contato</h1>
+
+                        <div class="form-floating mb-3">
+                            <input type="text" id="txtNomeCompleto" class="form-control" placeholder=" " autofocus>
+                            <label for="txtNomeCompleto">Nome Completo</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="email" id="txtEmail" class="form-control" placeholder=" ">
+                            <label for="txtEmail">E-mail</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <textarea id="txtMensagem" class="form-control" placeholder=" "
+                                style="height: 200px;"></textarea>
+                            <label for="txtMensagem">Mensagem</label>
+                        </div>
+
+                        <button type="button" onclick="window.location.href='/LojaWanted/html/confirmacaocontato.html'"
+                            class="btn btn-lg btn-outline-success">Enviar Mensagem
+                        </button>
+
+                        <p class="mt-3">
+                            Faremos nosso melhor para responder sua mensagem em até 2 dias úteis.
+                        </p>
+
+                        <p class="mt-3">
+                            Atenciosamente,<br>
+                            Central de Relacionamento Loja Wanted
+                        </p>
+                    </form>
+                </div>
             </div>
         </main>
 

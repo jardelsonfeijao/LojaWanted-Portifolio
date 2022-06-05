@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="/LojaWanted/node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/LojaWanted/css/estilos.css">
 
-    <title>Loja Wanted :: Página Principal</title>
+    <title>Loja Wanted :: login</title>
 </head>
 
 <body>
@@ -50,7 +50,7 @@
                             <form class="d-flex input-group" role="search">
                                 <input class="form-control" type="search" placeholder="Pesquisar..."
                                     aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">🔍</button>
+                                <button class="btn btn-outline-success active" type="submit">🔍</button>
                             </form>
                         </li>
                     </ul>
@@ -74,8 +74,44 @@
         </nav>
 
         <main class="flex-fill">
+
             <div class="container">
-                
+                <div class="row justify-content-center">
+                    <form class="col-sm-10 col-md-8 col-lg-6" action="">
+                        <h1>Identifique-se por favor</h1>
+
+                        <div class="form-floating mb-3">
+                            <input type="email" id="txtEmail" class="form-control" placeholder=" " autofocus>
+                            <label for="txtEmail">E-mail</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="password" id="txtSenha" class="form-control" placeholder=" " autofocus>
+                            <label for="txtSenha">Senha</label>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" value="" id="chkLembrar">
+                            <label for="chkLembrar" class="form-check-label">Lembrar de mim</label>
+                        </div>
+
+                        <button type="button" onclick="window.location.href='/LojaWanted/html/cliente_pedidos.html'"
+                            class="btn btn-lg btn-outline-success">Entrar
+                        </button>
+
+                        <p class="mt-3">
+                            Ainda não é cadastrado? <a href="/LojaWanted/html/cadastro.html">Clique aqui</a>
+                            para se cadastrar.
+                        </p>
+
+                        <p class="mt-3">
+                            Esqueceu sua senha? <a href="/LojaWanted/html/recuperarsenha.html">Clique aqui</a>
+                            para recuperá-la.
+                        </p>
+
+                    </form>
+                </div>
+
             </div>
         </main>
 
