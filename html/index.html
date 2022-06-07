@@ -33,7 +33,7 @@
     <title>Loja Wanted :: Página Principal</title>
 </head>
 
-<body>
+<body style="background-color: #141414;">
     <!-- NavBar logo wanted-barraPesquisa-Login, Carrinho -->
     <div class="d-flex flex-column wrapper">
         <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom bg-black mb-3">
@@ -47,10 +47,12 @@
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <form class="d-flex input-group" role="search">
-                                <input class="form-control" type="search" placeholder="Pesquisar..."
-                                    aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">🔍</button>
+                            <form class="justify-content-center justify-content-md-start mb-3 mb-md-0" role="search">
+                                <div class="input-group input-group-sm">
+                                    <input class="form-control" type="text" placeholder="Pesquisar..."
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success active" type="submit">🔍</button>
+                                </div>
                             </form>
                         </li>
                     </ul>
@@ -73,9 +75,438 @@
                     </div>
         </nav>
 
+        <!-- Carrorel img tela principal-->
+        <div class="container">
+            <div id="carouselMain" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2500">
+                        <img src="/LojaWanted/img/carrosel-img/banner01.png" class="d-none d-md-block w-100" alt="">
+                        <img src="/LojaWanted/img/carrosel-img/banner01small.png" class="d-block d-md-none  w-100"
+                            alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <img src="/LojaWanted/img/carrosel-img/banner02.png" class="d-none d-md-block w-100" alt="">
+                        <img src="/LojaWanted/img/carrosel-img/banner02small.png" class="d-block d-md-none  w-100"
+                            alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <img src="/LojaWanted/img/carrosel-img/banner03.jpg" class="d-none d-md-block w-100" alt="">
+                        <img src="/LojaWanted/img/carrosel-img/banner03small.jpg" class="d-block d-md-none  w-100"
+                            alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+
+            <hr class="mt-3">
+        </div>
+
         <main class="flex-fill">
             <div class="container">
-                
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                            <form class="d-inline-block">
+                                <select class="form-select form-select-sm">
+                                    <option>Ordenar pelo nome</option>
+                                    <option>Ordenar pelo menor preço</option>
+                                    <option>Ordenar pelo maior preço</option>
+                                </select>
+                            </form>
+                            <nav class="d-inline-block me-3">
+                                <ul class="pagination pagination-sm my-0">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">5</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">6</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <hr mt-3>
+
+                <div class="row g-3">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <a href="/produto.html">
+                                <img src="/LojaWanted/img/produtos/01.jpg" class="card-img-top">
+                            </a>
+                            <div class="card-header">
+                                R$ 99,99
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Camiseta Wanted – Intern</h5>
+                                <p class="card-text truncar-3l">
+                                    Peso 0.25 kg<br />
+                                    Cor Branco, Preto<br />
+                                    Tamanho M, G, GG, XG
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-outline-success active mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">disponivel</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <a href="/produto.html">
+                                <img src="/LojaWanted/img/produtos/02.jpg" class="card-img-top">
+                            </a>
+                            <div class="card-header">
+                                R$ 99,99
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Camiseta Wanted – Flick</h5>
+                                <p class="card-text truncar-3l">
+                                    Peso 0.25 kg <br />
+                                    Cor Branco, Preto <br />
+                                    Tamanho M, G, GG, XG
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-outline-success active mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">disponivel</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <a href="/produto.html">
+                                <img src="/LojaWanted/img/produtos/03.jpg" class="card-img-top">
+                            </a>
+                            <div class="card-header">
+                                R$ 99,99
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Camiseta Wanted – Reflex</h5>
+                                <p class="card-text truncar-3l">
+                                    Peso 0.25 kg <br />
+                                    Cor Branco, Preto <br />
+                                    Tamanho M, G, GG, XG
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-light disabled mt-2 d-block">
+                                    <small>Reabastecendo Estoque</small>
+                                </a>
+                                <small class="text-danger">
+                                    <b>Produto Esgotado</b>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart-fill" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <a href="/produto.html">
+                                <img src="/LojaWanted/img/produtos/04.jpg" class="card-img-top">
+                            </a>
+                            <div class="card-header">
+                                R$ 299,90
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Camiseta Wanted – Manga Longa Rolld</h5>
+                                <p class="card-text truncar-3l">
+                                    Peso 0.3 kg<br />
+                                    Cor Rosa<br />
+                                    Tamanho M, G, GG, XG
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-outline-success active mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">disponivel</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <a href="/produto.html">
+                                <img src="/LojaWanted/img/produtos/05.jpg" class="card-img-top">
+                            </a>
+                            <div class="card-header">
+                                R$ 209,90
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Camiseta Wanted – Manga Longa Broken Logo</h5>
+                                <p class="card-text truncar-3l">
+                                    Peso 0.3 kg<br />
+                                    Cor Bordô<br />
+                                    Tamanho M, G, GG, XG
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-outline-success active mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">disponivel</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <a href="/produto.html">
+                                <img src="/LojaWanted/img/produtos/06.jpg" class="card-img-top">
+                            </a>
+                            <div class="card-header">
+                                R$ 119,90
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Camiseta Wanted Premium – Mynameis</h5>
+                                <p class="card-text truncar-3l">
+                                    Peso 0.25 kg<br/>
+                                    Cor Branco, Preto<br/>
+                                    Tamanho M, G, GG, XG
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-outline-success active mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">disponivel</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <a href="/produto.html">
+                                <img src="/LojaWanted/img/produtos/07.jpg" class="card-img-top">
+                            </a>
+                            <div class="card-header">
+                                R$ 4,50
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">$$$</h5>
+                                <p class="card-text truncar-3l">
+                                    $$$ da melhor qualidade possível, direto do produtor rural para a sua mesa.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">320,5kg em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <a href="/produto.html">
+                                <img src="/LojaWanted/img/produtos/08.jpg" class="card-img-top">
+                            </a>
+                            <div class="card-header">
+                                R$ 4,50
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">$$$</h5>
+                                <p class="card-text truncar-3l">
+                                    $$$ da melhor qualidade possível, direto do produtor rural para a sua mesa.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">320,5kg em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart-fill" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <a href="/produto.html">
+                                <img src="/LojaWanted/img/produtos/09.jpg" class="card-img-top">
+                            </a>
+                            <div class="card-header">
+                                R$ 4,50
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">$$$</h5>
+                                <p class="card-text truncar-3l">
+                                    $$$ da melhor qualidade possível, direto do produtor rural para a sua mesa.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">320,5kg em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <a href="/produto.html">
+                                <img src="/LojaWanted/img/produtos/10.jpg" class="card-img-top">
+                            </a>
+                            <div class="card-header">
+                                R$ 4,50
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">$$$</h5>
+                                <p class="card-text truncar-3l">
+                                    $$$ da melhor qualidade possível, direto do produtor rural para a sua mesa.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">320,5kg em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <a href="/produto.html">
+                                <img src="/LojaWanted/img/produtos/11.jpg" class="card-img-top">
+                            </a>
+                            <div class="card-header">
+                                R$ 4,50
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">$$$</h5>
+                                <p class="card-text truncar-3l">
+                                    $$$ da melhor qualidade possível, direto do produtor rural para a sua mesa.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">320,5kg em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <a href="/produto.html">
+                                <img src="/LojaWanted/img/produtos/12.jpg" class="card-img-top">
+                            </a>
+                            <div class="card-header">
+                                R$ 4,50
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">$$$</h5>
+                                <p class="card-text truncar-3l">
+                                    $$$ da melhor qualidade possível, direto do produtor rural para a sua mesa.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">320,5kg em estoque</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="mt-3">
+
+                <div class="row pb-3">
+                    <div class="col-12">
+                        <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                            <form class="d-inline-block">
+                                <select class="form-select form-select-sm">
+                                    <option>Ordenar pelo nome</option>
+                                    <option>Ordenar pelo menor preço</option>
+                                    <option>Ordenar pelo maior preço</option>
+                                </select>
+                            </form>
+                            <nav class="d-inline-block me-3">
+                                <ul class="pagination pagination-sm my-0">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">5</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">6</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
 
